@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>QUnit Example</title>
+  <link rel="stylesheet" href="qunit.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture">
+  	
+	  <div id="testDiv">
+		<a href="http://www.dsmwebgeeks.com/">Web Geeks</a>
+		<a href="/stats.pdf">stats</a>
+		<a href="somewhere">just a link</a>
+	  </div>
+
+  </div>
+  <script>
+  // not the real ga()
+  ga = function() {
+  	console.log('ga() was called!');
+  };
+  </script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="qunit-1.13.0.js"></script>
+  <script src="sinon-1.7.3.js"></script>
+  <script src="sinon-qunit-1.0.0.js"></script>
+  <script src="../jquery.analytics.js"></script>
+  <script src="test.analytics.js"></script>
+</body>
+</html>
