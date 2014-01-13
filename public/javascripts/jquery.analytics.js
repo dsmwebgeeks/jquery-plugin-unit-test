@@ -28,4 +28,9 @@
 
 	}
 
+	/**
+	 * This defines some default values for the wgTrackDownload function
+	 */
+	$.fn.wgTrackDownload.defaults = {};
+
 }(jQuery));

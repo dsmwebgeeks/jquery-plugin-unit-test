@@ -81,6 +81,12 @@ test('wgTrackDownload exists', function() {
 	ok( jQuery('#testDiv').wgTrackDownload);
 });
 
+test('wgTrackDownload options exists', function() {
+	// THIS TEST IS NOT ENOUGH TO VERIFY THIS BEHAVIOR!
+	// Need more tests...
+	ok( jQuery.fn.wgTrackDownload.defaults );
+})
+
 test('wgTrackDownload returns one link', function() {
 	equal( jQuery('#testDiv').wgTrackDownload().length);
 });
